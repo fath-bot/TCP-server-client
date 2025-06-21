@@ -25,8 +25,29 @@ Proyek ini merupakan implementasi sederhana dari **komunikasi client-server berb
 
 ### 🚀 Cara Menjalankan
 
+Tentu! Berikut versi revisi bagian **cara menjalankan**, dengan memasukkan petunjuk penggunaan `client.py`:
+
+---
+
+### 🚀 Cara Menjalankan
+
 1. Jalankan `SingleThread-Server.py` atau `MultiThread-Server.py` untuk mengaktifkan server.
+
 2. Jalankan `client.py` untuk menghubungkan client ke server dan mengirim pesan.
+   **Format perintah:**
+
+   ```
+   python client.py <server_host> <server_port> <path> <num_requests>
+   ```
+
+   **Contoh:**
+
+   ```
+   python client.py localhost 5555 /index.html 5
+   ```
+
+   > Ini akan mengirim 5 permintaan ke server untuk mengambil `/index.html`.
+
 3. (Opsional) Buka `kelompok.html` di browser untuk melihat dokumentasi atau informasi proyek.
 
 ### 📚 Kebutuhan
