@@ -1,42 +1,40 @@
-# TCP-server-client
-TCP server/client
 
-🧩 TCP Server & Client – Python Socket Programming
-Simple implementation of a TCP-based client-server communication system using Python's socket library.
 
-This project demonstrates how to:
+## 🧩 TCP Server & Client – Pemrograman Socket Python
 
-Build a TCP server that listens for incoming client connections
+Proyek ini merupakan implementasi sederhana dari **komunikasi client-server berbasis TCP** menggunakan Python, dilengkapi dengan versi server **single-threaded** dan **multi-threaded**, serta satu halaman HTML pendukung untuk dokumentasi atau tampilan.
 
-Create a TCP client that connects to the server
+### 🔧 Fitur
 
-Exchange data (send & receive messages) reliably over the network
+* Komunikasi dua arah antara client dan server menggunakan TCP
+* **SingleThread-Server**: server menangani satu client pada satu waktu
+* **MultiThread-Server**: server dapat menangani banyak client secara bersamaan dengan threading
+* **Client**: menghubungkan dan mengirim pesan ke server
+* **kelompok.html**: berisi dokumentasi, identitas tim, atau tampilan web sederhana
 
-Handle basic connection lifecycle (connect, communicate, close)
+### 📁 Struktur Proyek
 
-🔧 Features
-Bi-directional communication over TCP
-
-Basic connection handling (single/multi client)
-
-Clean, beginner-friendly code structure
-
-Easily extendable for chat apps, remote control, or IoT projects
-
-📁 Structure
-bash
-Copy
-Edit
+```
 /tcp_project
 │
-├── server.py   # TCP server: listens and responds
-└── client.py   # TCP client: connects and sends messages
-🚀 Getting Started
-Run server.py to start the server.
+├── kelompok.html             # Halaman HTML berisi dokumentasi atau informasi kelompok
+├── client.py                 # TCP client: menghubungkan ke server dan mengirim pesan
+├── SingleThread-Server.py    # Server TCP sederhana (1 client dalam satu waktu)
+└── MultiThread-Server.py     # Server TCP dengan dukungan multithreading (multi client)
+```
 
-Run client.py to connect and send messages.
+### 🚀 Cara Menjalankan
 
-📚 Requirements
-Python 3.x
+1. Jalankan `SingleThread-Server.py` atau `MultiThread-Server.py` untuk mengaktifkan server.
+2. Jalankan `client.py` untuk menghubungkan client ke server dan mengirim pesan.
+3. (Opsional) Buka `kelompok.html` di browser untuk melihat dokumentasi atau informasi proyek.
 
-No external dependencies (uses built-in socket)
+### 📚 Kebutuhan
+
+* Python 3.x
+* Tidak memerlukan pustaka eksternal (menggunakan `socket` dan `threading` bawaan)
+
+---
+
+**Proyek ini sebagai latihan dasar pemrograman jaringan dan bisa dikembangkan untuk aplikasi chat, monitoring sistem, atau simulasi IoT.**
+
